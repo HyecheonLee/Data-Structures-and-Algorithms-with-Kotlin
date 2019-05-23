@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="009cccc8-116c-4896-8429-e3411c98ecef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ch02/MultidimensionalArray.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch03/SinglyLinkedList.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,22 +18,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch02/TheBeautyOf ImmutableArrays.kt">
+        <entry file="file://$PROJECT_DIR$/src/ch02/MultidimensionalArray.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
-              <folding>
-                <element signature="e#14#74#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1652">
+              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ch02/MultidimensionalArray.kt">
+        <entry file="file://$PROJECT_DIR$/src/ch03/SinglyLinkedList.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+            <state relative-caret-position="360">
+              <caret line="226" column="4" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -123,6 +120,7 @@
     <findStrings>
       <find>op</find>
       <find>oper</find>
+      <find>node</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/ch02/Vectors.kt" />
         <option value="$PROJECT_DIR$/src/ch02/TheBeautyOf ImmutableArrays.kt" />
         <option value="$PROJECT_DIR$/src/ch02/MultidimensionalArray.kt" />
+        <option value="$PROJECT_DIR$/src/ch03/SinglyLinkedList.kt" />
       </list>
     </option>
   </component>
@@ -155,7 +154,6 @@
       <foldersAlwaysOnTop value="false" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,13 +170,14 @@
               <item name="Hands-On Data Structures and Algorithms with Kotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="Hands-On Data Structures and Algorithms with Kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ch02" type="462c0819:PsiDirectoryNode" />
+              <item name="ch03" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.ch02.MultidimensionalArrayKt">
+  <component name="RunManager" selected="Kotlin.ch03.SinglyLinkedListKt">
     <configuration name="ch02.MultidimensionalArrayKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Hands-On Data Structures and Algorithms with Kotlin" />
       <option name="VM_PARAMETERS" />
@@ -250,8 +249,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ch03.SinglyLinkedListKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Hands-On Data Structures and Algorithms with Kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch03.SinglyLinkedListKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ch03.SinglyLinkedListKt" />
         <item itemvalue="Kotlin.ch02.MultidimensionalArrayKt" />
         <item itemvalue="Kotlin.ch02.VectorsKt" />
         <item itemvalue="Kotlin.ch02.operations_with_arrays.CreatingAnArrayKt" />
@@ -271,7 +284,9 @@
       <workItem from="1558254297997" duration="5589000" />
       <workItem from="1558363050618" duration="2765000" />
       <workItem from="1558452167812" duration="1719000" />
-      <workItem from="1558541764020" duration="786000" />
+      <workItem from="1558541764020" duration="1181000" />
+      <workItem from="1558622898358" duration="2286000" />
+      <workItem from="1558625423872" duration="908000" />
     </task>
     <task id="LOCAL-00001" summary="OperationsWithArray">
       <created>1558268825153</created>
@@ -294,11 +309,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558453847822</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Multidimensional Array">
+      <created>1558542609687</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558542609687</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10859000" />
+    <option name="totallyTimeSpent" value="14448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1080" y="481" width="1920" height="1055" extended-state="6" />
@@ -385,7 +407,8 @@
     <MESSAGE value="OperationsWithArray" />
     <MESSAGE value="Vectors" />
     <MESSAGE value="TheBeautyOf ImmutableArrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="TheBeautyOf ImmutableArrays" />
+    <MESSAGE value="Multidimensional Array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multidimensional Array" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ch02.x.kt" />
@@ -404,6 +427,23 @@
           <folding>
             <element signature="e#14#74#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch02/TheBeautyOf ImmutableArrays.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2940">
+          <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
+          <folding>
+            <element signature="e#14#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch02/MultidimensionalArray.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1652">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -463,20 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch02/TheBeautyOf ImmutableArrays.kt">
+    <entry file="file://$PROJECT_DIR$/src/ch03/SinglyLinkedList.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
-          <folding>
-            <element signature="e#14#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch02/MultidimensionalArray.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        <state relative-caret-position="360">
+          <caret line="226" column="4" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="4" />
         </state>
       </provider>
     </entry>

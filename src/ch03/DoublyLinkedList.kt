@@ -27,6 +27,45 @@ class DoublyLinkyList<E> {
         linkTail(element)
     }
 
+    fun <T> addAll(index: Int, arr: Array<T>): Boolean where T : E {
+        validatePositionIndex(index)
+        val numNew = arr.size
+        if (numNew == 0) return false
+        var pred: Node<E>?
+        var succ: Node<E>?
+        when (index) {
+            0 -> {
+                succ = head
+                pred = null
+            }
+            size -> {
+                succ = null
+                pred = tail
+            }
+            else -> {
+                succ = node(index)
+                pred = succ.prev
+            }
+        }
+        for (item in arr) {
+            val e = item as E
+            val newNode = Node<E>(pred, e, null)
+            if (pred == null)
+                head = newNode
+            else
+                pred.next = newNode
+            pred = newNode
+        }
+        if (succ == null) {
+            tail = pred
+        } else {
+            pred!!.next = succ
+            succ!!.prev = pred
+        }
+        size += numNew
+        return true
+    }
+
     fun remove(element: E): Boolean {
         var curr = head
         while (curr != null) {
